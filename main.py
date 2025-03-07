@@ -3,6 +3,7 @@ from collections import OrderedDict
 import json
 import os
 from ServiceLayer import SAPBusinessOne
+import threading
 
 app = Flask(__name__)
 sap = SAPBusinessOne(config_file='config.json')
@@ -77,7 +78,14 @@ def procesar_refund(data):
         OrderedDict({**refund_data, "tipticard_id": data.get("user", {}).get("tipticard_id"), "order": data.get("order")})
     ]
 
-#def InsercionCabecera(cabecera):
+
+
+def insertar_cabecera_thread(cabecera, sap):
+    sap.insertar_cabecera(cabecera)
+
+def insertar_lineas_thread(lineas, sap):
+    for linea in lineas:
+        sap.insertar_lineas(linea)
 
 
 @app.route('/procesar', methods=['POST'])
@@ -105,14 +113,22 @@ def procesar_json():
         with open(json_file_path, 'w', encoding='utf-8') as f:
             json.dump(response_data, f, ensure_ascii=False, indent=4)
 
+         # Iniciar hilos para procesar cabecera y lineas en paralelo
+        cabecera_thread = threading.Thread(target=insertar_cabecera_thread, args=(cabecera, sap))
+        lineas_thread = threading.Thread(target=insertar_lineas_thread, args=(lineas, sap))
+
+        cabecera_thread.start()
+        lineas_thread.start()
+
+        cabecera_thread.join()
+        lineas_thread.join()
         
-        
-        sap.obtener_session()
+        '''sap.obtener_session()
         sap.insertar_cabecera(cabecera)
         sap.insertar_lineas(lineas)
         #sap.eliminar_lineas_en_rango(278,375)
         socios=sap.obtener_socios_de_negocios()
-        sap.crear_socio(socios)
+        sap.crear_socio(socios)'''
 
         '''response_data2 = OrderedDict([
             ("cabecera", cabecera),
