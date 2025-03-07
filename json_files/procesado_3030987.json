@@ -1,0 +1,142 @@
+{
+    "cabecera": {
+        "order": 3030987,
+        "Numero_FacturasCompras": "188282899191920",
+        "bill_number": "001-100-002894639",
+        "authorization_number": "0308202401179269433700120011000028946390000000115",
+        "date": "2024-08-03 00:00:00",
+        "user": {
+            "ref": "carla.jimenez@icloud.com",
+            "name": "Carla Jiménez",
+            "tipticard_id": 266742,
+            "email": "carla.jimenez@icloud.com"
+        },
+        "partner": {
+            "name": "Carla Jiménez",
+            "vat": "1716912836",
+            "vat_type": "05",
+            "street": "Avenida Amazonas 1234",
+            "phone": "+593 990376053",
+            "email": "carla.jimenez@icloud.com",
+            "city": "Guayaquil",
+            "Grupo": "B2C",
+            "Subcategoria": "Subgrupo B2C"
+        },
+        "purchase_shopper": null,
+        "delivery_shopper": null,
+        "retailer_bills": null,
+        "vat_subtotal": null,
+        "amount_total": null,
+        "retailer_name": null,
+        "retailer_ruc": null,
+        "retailer_id": null,
+        "Ciudad_id": null,
+        "Ciudad_desc": null,
+        "Sector_id": null,
+        "Sector_desc": null,
+        "Tienda_id": null,
+        "Tienda_desc": null,
+        "delivery_information": null
+    },
+    "lineas": [
+        {
+            "quantity": 1,
+            "product_code": "01011080854322",
+            "product_name": "Jabón En Barra Antibacterial Carbón Detóx Colgate 3 X 110 G",
+            "product_description": "Jabón En Barra Antibacterial Carbón Detóx Colgate 3 X 110 G",
+            "revenue_source": "PRODUCT",
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "category4": null,
+            "sequence": 1,
+            "tax": "vat15",
+            "price_unit": 2.97,
+            "price_unit_without_tax": 2.58,
+            "margin": "10.00",
+            "validate_inventory": true,
+            "line_total": 2.97,
+            "product_code_secundario": "01011080854322",
+            "linenum": 0,
+            "order": 3030987
+        },
+        {
+            "quantity": 1,
+            "product_code": "01011080775356",
+            "product_name": "Shampoo Fuerza de Raíz Head & Shoulders Head & Shoulders Nan",
+            "product_description": "Shampoo Fuerza de Raíz Head & Shoulders Head & Shoulders Nan",
+            "revenue_source": "PRODUCT",
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "category4": null,
+            "sequence": 2,
+            "tax": "vat15",
+            "price_unit": 5.31,
+            "price_unit_without_tax": 4.62,
+            "margin": "10.00",
+            "validate_inventory": true,
+            "line_total": 5.31,
+            "product_code_secundario": "01011080775356",
+            "linenum": 1,
+            "order": 3030987
+        },
+        {
+            "quantity": 1,
+            "product_code": "01011080897926",
+            "product_name": "Shampoo Argán Head & Shoulders 180 Ml",
+            "product_description": "Shampoo Argán Head & Shoulders 180 Ml",
+            "revenue_source": "PRODUCT",
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "category4": null,
+            "sequence": 3,
+            "tax": "vat15",
+            "price_unit": 5.31,
+            "price_unit_without_tax": 4.62,
+            "margin": "10.00",
+            "validate_inventory": true,
+            "line_total": 5.31,
+            "product_code_secundario": "01011080897926",
+            "linenum": 2,
+            "order": 3030987
+        }
+    ],
+    "pagos": [],
+    "descuentos": [
+        {
+            "order": 3030987,
+            "linenum": 0,
+            "discount_id": 71818,
+            "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+            "discount_rate": "100.00",
+            "discount_group": "Descuento-Tipti",
+            "amount": "2.58"
+        },
+        {
+            "order": 3030987,
+            "linenum": 1,
+            "discount_id": 71818,
+            "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+            "discount_rate": "94.16",
+            "discount_group": "Descuento-Tipti",
+            "amount": "4.35"
+        },
+        {
+            "order": 3030987,
+            "linenum": 2,
+            "discount_id": 71818,
+            "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+            "discount_rate": "94.16",
+            "discount_group": "Descuento-Tipti",
+            "amount": "4.35"
+        }
+    ],
+    "refund": [
+        {
+            "tipticard_id": 266742,
+            "order": 3030987
+        }
+    ]
+}

@@ -1,0 +1,2725 @@
+[
+    {
+        "quantity": 1,
+        "product_code": "01011080854322",
+        "product_name": "Jab\u00f3n En Barra Antibacterial Carb\u00f3n Det\u00f3x Colgate 3 X 110 G",
+        "product_description": "Jab\u00f3n En Barra Antibacterial Carb\u00f3n Det\u00f3x Colgate 3 X 110 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "2.58"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 1,
+        "tax": "vat15",
+        "price_unit": 2.97,
+        "price_unit_without_tax": 2.58,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.97,
+        "product_code_secundario": "01011080854322"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080775356",
+        "product_name": "Shampoo Fuerza de Ra\u00edz Head & Shoulders Head & Shoulders Nan",
+        "product_description": "Shampoo Fuerza de Ra\u00edz Head & Shoulders Head & Shoulders Nan",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "94.16",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 2,
+        "tax": "vat15",
+        "price_unit": 5.31,
+        "price_unit_without_tax": 4.62,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 5.31,
+        "product_code_secundario": "01011080775356"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080897926",
+        "product_name": "Shampoo Arg\u00e1n Head & Shoulders 180 Ml",
+        "product_description": "Shampoo Arg\u00e1n Head & Shoulders 180 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "94.16",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 3,
+        "tax": "vat15",
+        "price_unit": 5.31,
+        "price_unit_without_tax": 4.62,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 5.31,
+        "product_code_secundario": "01011080897926"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108043701",
+        "product_name": "Crema Corporal Hidratante A Base De \u00darea Instituto Espa\u00f1ol Presentaci\u00f3n De 500 Ml",
+        "product_description": "Crema Corporal Hidratante A Base De \u00darea Instituto Espa\u00f1ol Presentaci\u00f3n De 500 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "56.69",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 4,
+        "tax": "vat15",
+        "price_unit": 8.82,
+        "price_unit_without_tax": 7.67,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 8.82,
+        "product_code_secundario": "0101108043701"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108008541",
+        "product_name": "Chuleta de Lomo de Cerdo Supercarnes En Bandeja",
+        "product_description": "Chuleta de Lomo de Cerdo Supercarnes En Bandeja",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "92.08",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "3.39"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 5,
+        "tax": "vatZero",
+        "price_unit": 3.68,
+        "price_unit_without_tax": 3.68,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 3.68,
+        "product_code_secundario": "0101108008541"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080900462",
+        "product_name": "Shampoo con Multiaceites Savital 510 Ml",
+        "product_description": "Shampoo con Multiaceites Savital 510 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "99.80",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 6,
+        "tax": "vat15",
+        "price_unit": 5.01,
+        "price_unit_without_tax": 4.36,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 5.01,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "010110801090385",
+        "product_name": "Bolsa Costal Maxi Econ\u00f3mica 52 X 50 CM Supermaxi",
+        "product_description": "Bolsa Costal Maxi Econ\u00f3mica 52 X 50 CM Supermaxi",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71813,
+                "discount_rate": "100.00",
+                "discount_name": "MKT - CF SUPEROFERTAS CAMPA\u00d1A RECICLA DEL 1 AL 28 DE AGOSTO",
+                "discount_group": "Descuento-Retail",
+                "amount": "0.01"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 7,
+        "tax": "vatZero",
+        "price_unit": 0.0,
+        "price_unit_without_tax": 0.0,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 0.0,
+        "product_code_secundario": "010110801090385"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080846824",
+        "product_name": "Mascarilla Facial Hidra Bomb Calmante Garnier L\u00b4or\u00e9al 28 G",
+        "product_description": "Mascarilla Facial Hidra Bomb Calmante Garnier L\u00b4or\u00e9al 28 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "3.06"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 8,
+        "tax": "vat15",
+        "price_unit": 3.52,
+        "price_unit_without_tax": 3.06,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 3.52,
+        "product_code_secundario": "01011080846824"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108035872",
+        "product_name": "Acondicionador Biorenew de Aceite Moringa Dorada Herbal Essences Nan",
+        "product_description": "Acondicionador Biorenew de Aceite Moringa Dorada Herbal Essences Nan",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "48.64",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 9,
+        "tax": "vat15",
+        "price_unit": 10.28,
+        "price_unit_without_tax": 8.94,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 10.28,
+        "product_code_secundario": "0101108035872"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080897927",
+        "product_name": "Shampoo Arg\u00e1n Limpieza y Revitalizaci\u00f3n Head & Shoulders 375 Ml",
+        "product_description": "Shampoo Arg\u00e1n Limpieza y Revitalizaci\u00f3n Head & Shoulders 375 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "52.30",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 10,
+        "tax": "vat15",
+        "price_unit": 9.56,
+        "price_unit_without_tax": 8.31,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 9.56,
+        "product_code_secundario": "01011080897927"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108023987",
+        "product_name": "Lavaplatos L\u00edquido Lim\u00f3n Axion 720 Ml",
+        "product_description": "Lavaplatos L\u00edquido Lim\u00f3n Axion 720 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "1.84"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 11,
+        "tax": "vat15",
+        "price_unit": 2.12,
+        "price_unit_without_tax": 1.84,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.12,
+        "product_code_secundario": "0101108023987"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108012358",
+        "product_name": "Lavavajilla En Crema de Avena Lava 450 G",
+        "product_description": "Lavavajilla En Crema de Avena Lava 450 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "1.50"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 12,
+        "tax": "vat15",
+        "price_unit": 1.73,
+        "price_unit_without_tax": 1.5,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 1.73,
+        "product_code_secundario": "0101108012358"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108017292",
+        "product_name": "Crema Facial Hidratante Lata Nivea 60 Ml",
+        "product_description": "Crema Facial Hidratante Lata Nivea 60 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "2.97"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 13,
+        "tax": "vat15",
+        "price_unit": 3.42,
+        "price_unit_without_tax": 2.97,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 3.42,
+        "product_code_secundario": "0101108017292"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108002769",
+        "product_name": "Detergente En Polvo Lavado Perfecto Lim\u00f3n + Bicarbonato Deja 2 Kg",
+        "product_description": "Detergente En Polvo Lavado Perfecto Lim\u00f3n + Bicarbonato Deja 2 Kg",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "77.04",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 14,
+        "tax": "vat15",
+        "price_unit": 6.49,
+        "price_unit_without_tax": 5.64,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 6.49,
+        "product_code_secundario": "0101108002769"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108017326",
+        "product_name": "Detergente En Polvo Lavado Perfecto Floral + Bicarbonato Deja 2 Kg",
+        "product_description": "Detergente En Polvo Lavado Perfecto Floral + Bicarbonato Deja 2 Kg",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "77.04",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 15,
+        "tax": "vat15",
+        "price_unit": 6.49,
+        "price_unit_without_tax": 5.64,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 6.49,
+        "product_code_secundario": "0101108017326"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108020790",
+        "product_name": "Detergente En Polvo Multiusos Con Aroma Floral Lavatodo 2000 G",
+        "product_description": "Detergente En Polvo Multiusos Con Aroma Floral Lavatodo 2000 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.12"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 16,
+        "tax": "vat15",
+        "price_unit": 4.74,
+        "price_unit_without_tax": 4.12,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 4.74,
+        "product_code_secundario": "0101108020790"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108037123",
+        "product_name": "Mascarilla Facial Hidratante Celkin Por 20gr",
+        "product_description": "Mascarilla Facial Hidratante Celkin Por 20gr",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "1.02"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 17,
+        "tax": "vat15",
+        "price_unit": 1.17,
+        "price_unit_without_tax": 1.02,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 1.17,
+        "product_code_secundario": "0101108037123"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108002331",
+        "product_name": "Mascarilla Facial Negra De Burbujas Oxigenadas Dermactin Ts De 20Gr",
+        "product_description": "Mascarilla Facial Negra De Burbujas Oxigenadas Dermactin Ts De 20Gr",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "1.87"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 18,
+        "tax": "vat15",
+        "price_unit": 2.15,
+        "price_unit_without_tax": 1.87,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.15,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108012853",
+        "product_name": "Mascarilla Facial de Vitamina C Dearderm Por 25ml / .85fl",
+        "product_description": "Mascarilla Facial de Vitamina C Dearderm Por 25ml / .85fl",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "1.58"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 19,
+        "tax": "vat15",
+        "price_unit": 1.82,
+        "price_unit_without_tax": 1.58,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 1.82,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108006102",
+        "product_name": "Mascarilla Facial T\u00e9 Verde Dearderm Nan",
+        "product_description": "Mascarilla Facial T\u00e9 Verde Dearderm Nan",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "1.17"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 20,
+        "tax": "vat15",
+        "price_unit": 1.35,
+        "price_unit_without_tax": 1.17,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 1.35,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 3,
+        "product_code": "0101108000195",
+        "product_name": "Fundas Cambrella Anaranjada Tipti",
+        "product_description": "Fundas Cambrella Anaranjada Tipti",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "3.65"
+            },
+            {
+                "discount_id": 30218,
+                "discount_rate": "100.00",
+                "discount_name": "CAMBRELLA",
+                "discount_group": "Descuento-Tipti",
+                "amount": "3.65"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 21,
+        "tax": "vat15",
+        "price_unit": 1.4,
+        "price_unit_without_tax": 1.22,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 4.199999999999999,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108012928",
+        "product_name": "Shampoo para Cabello Bot\u00e1nica Onions Extracto de Cebolla y Lavanda Avadia 400 Ml",
+        "product_description": "Shampoo para Cabello Bot\u00e1nica Onions Extracto de Cebolla y Lavanda Avadia 400 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "62.89",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 22,
+        "tax": "vat15",
+        "price_unit": 7.95,
+        "price_unit_without_tax": 6.91,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 7.95,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108013259",
+        "product_name": "Shampoo Beb\u00e9 Original 750 Ml Johnson's Nan",
+        "product_description": "Shampoo Beb\u00e9 Original 750 Ml Johnson's Nan",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "60.02",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 23,
+        "tax": "vat15",
+        "price_unit": 8.33,
+        "price_unit_without_tax": 7.24,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 8.33,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108003542",
+        "product_name": "Jab\u00f3n \u00cdntimo CleaSing Wash Femenine",
+        "product_description": "Jab\u00f3n \u00cdntimo CleaSing Wash Femenine",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "99.01",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 24,
+        "tax": "vat15",
+        "price_unit": 5.05,
+        "price_unit_without_tax": 4.39,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 5.05,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108001281",
+        "product_name": "Detergente En Polvo Vinagre Lim\u00f3n Antibacterial As 1000 G",
+        "product_description": "Detergente En Polvo Vinagre Lim\u00f3n Antibacterial As 1000 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "2.45"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 25,
+        "tax": "vat15",
+        "price_unit": 2.82,
+        "price_unit_without_tax": 2.45,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.82,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108006346",
+        "product_name": "Lavavajilla En Crema Manzana Lava 900 G",
+        "product_description": "Lavavajilla En Crema Manzana Lava 900 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "2.51"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 26,
+        "tax": "vat15",
+        "price_unit": 2.89,
+        "price_unit_without_tax": 2.51,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.89,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108009811",
+        "product_name": "Detergente En Polvo Aloe Vera con Suavizante + Bicarbonato Deja 1.2 Kg",
+        "product_description": "Detergente En Polvo Aloe Vera con Suavizante + Bicarbonato Deja 1.2 Kg",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "3.46"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 27,
+        "tax": "vat15",
+        "price_unit": 3.98,
+        "price_unit_without_tax": 3.46,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 3.98,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108006248",
+        "product_name": "Lavavajillas Fragancia Naranja+menta 901 900 Ml",
+        "product_description": "Lavavajillas Fragancia Naranja+menta 901 900 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "1.98"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 28,
+        "tax": "vat15",
+        "price_unit": 2.28,
+        "price_unit_without_tax": 1.98,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.28,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108018695",
+        "product_name": "Mascarilla Purificadora De Carb\u00f3n Dermactin Ts Unidad",
+        "product_description": "Mascarilla Purificadora De Carb\u00f3n Dermactin Ts Unidad",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "2.55"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 29,
+        "tax": "vat15",
+        "price_unit": 2.93,
+        "price_unit_without_tax": 2.55,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.93,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108019292",
+        "product_name": "Mascarilla Facial Pepino Dearderm 10 Unidades",
+        "product_description": "Mascarilla Facial Pepino Dearderm 10 Unidades",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "1.58"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 30,
+        "tax": "vat15",
+        "price_unit": 1.82,
+        "price_unit_without_tax": 1.58,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 1.82,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108013788",
+        "product_name": "Gel para Peinar sin Alcohol Biolans",
+        "product_description": "Gel para Peinar sin Alcohol Biolans",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 31,
+        "tax": "vat15",
+        "price_unit": 5.0,
+        "price_unit_without_tax": 4.35,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 5.0,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108014835",
+        "product_name": "Jab\u00f3n L\u00edquido para Manos y Cuerpo Hidratante Antibacterial Avena y Miel Bacterion 300 Ml",
+        "product_description": "Jab\u00f3n L\u00edquido para Manos y Cuerpo Hidratante Antibacterial Avena y Miel Bacterion 300 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "2.37"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 32,
+        "tax": "vat15",
+        "price_unit": 2.73,
+        "price_unit_without_tax": 2.37,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.73,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108015016",
+        "product_name": "Mascarilla Intensiva Aceite de Arg\u00e1n de Marruecos y Aloe Herbal Essences 300 Ml",
+        "product_description": "Mascarilla Intensiva Aceite de Arg\u00e1n de Marruecos y Aloe Herbal Essences 300 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "71.94",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 33,
+        "tax": "vat15",
+        "price_unit": 6.95,
+        "price_unit_without_tax": 6.04,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 6.95,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108018756",
+        "product_name": "Shampoo Aloe y Sea Kelp Herbal Essences 400 Ml",
+        "product_description": "Shampoo Aloe y Sea Kelp Herbal Essences 400 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "48.64",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 34,
+        "tax": "vat15",
+        "price_unit": 10.28,
+        "price_unit_without_tax": 8.94,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 10.28,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108017097",
+        "product_name": "Shampoo Bot\u00e1nica Detox Carb\u00f3n Activo Avadia 400 Ml",
+        "product_description": "Shampoo Bot\u00e1nica Detox Carb\u00f3n Activo Avadia 400 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "64.18",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 35,
+        "tax": "vat15",
+        "price_unit": 7.79,
+        "price_unit_without_tax": 6.77,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 7.79,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108019187",
+        "product_name": "Cera para Peinar de Cabello Ego 160 Ml",
+        "product_description": "Cera para Peinar de Cabello Ego 160 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "3.06"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 36,
+        "tax": "vat15",
+        "price_unit": 3.52,
+        "price_unit_without_tax": 3.06,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 3.52,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108017192",
+        "product_name": "Lavavajillas Fragancia Lim\u00f3n Verbena 901 900 Ml",
+        "product_description": "Lavavajillas Fragancia Lim\u00f3n Verbena 901 900 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "1.91"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 37,
+        "tax": "vat15",
+        "price_unit": 2.2,
+        "price_unit_without_tax": 1.91,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.2,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108022106",
+        "product_name": "Detergente En Polvo Manzana As 2000 G",
+        "product_description": "Detergente En Polvo Manzana As 2000 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "92.08",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 38,
+        "tax": "vat15",
+        "price_unit": 5.43,
+        "price_unit_without_tax": 4.72,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 5.43,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108033513",
+        "product_name": "Ch\u00eda Life Nature's Heart 250 Gr",
+        "product_description": "Ch\u00eda Life Nature's Heart 250 Gr",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.66"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 39,
+        "tax": "vatZero",
+        "price_unit": 4.66,
+        "price_unit_without_tax": 4.66,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 4.66,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108028116",
+        "product_name": "Mascarilla Facial de Negra Caviar Dearderm Por 25ml / .85fl",
+        "product_description": "Mascarilla Facial de Negra Caviar Dearderm Por 25ml / .85fl",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "1.17"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 40,
+        "tax": "vat15",
+        "price_unit": 1.35,
+        "price_unit_without_tax": 1.17,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 1.35,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108026654",
+        "product_name": "Jab\u00f3n En Barra De Avena Super Oferta Protex 1x 110 G",
+        "product_description": "Jab\u00f3n En Barra De Avena Super Oferta Protex 1x 110 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "3.52"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 41,
+        "tax": "vat15",
+        "price_unit": 4.05,
+        "price_unit_without_tax": 3.52,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 4.05,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108033829",
+        "product_name": "Jab\u00f3n de Tocador L\u00edquido Manzanilla y Jalea de Miel Ninacuro 450 Ml",
+        "product_description": "Jab\u00f3n de Tocador L\u00edquido Manzanilla y Jalea de Miel Ninacuro 450 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "3.36"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 42,
+        "tax": "vat15",
+        "price_unit": 3.86,
+        "price_unit_without_tax": 3.36,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 3.86,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108025717",
+        "product_name": "Crema Facial Hidratante Lata Nivea 30 Ml",
+        "product_description": "Crema Facial Hidratante Lata Nivea 30 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "1.84"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 43,
+        "tax": "vat15",
+        "price_unit": 2.12,
+        "price_unit_without_tax": 1.84,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.12,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108027848",
+        "product_name": "Detergente En Polvo Brisa Primavera con Suavizante + Bicarbonato Deja 2 Kg",
+        "product_description": "Detergente En Polvo Brisa Primavera con Suavizante + Bicarbonato Deja 2 Kg",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "77.04",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 44,
+        "tax": "vat15",
+        "price_unit": 6.49,
+        "price_unit_without_tax": 5.64,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 6.49,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108024964",
+        "product_name": "Detergente En Polvo Brisa Primavera con Suavizante + Bicarbonato Deja 1.2 Kg",
+        "product_description": "Detergente En Polvo Brisa Primavera con Suavizante + Bicarbonato Deja 1.2 Kg",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "3.46"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 45,
+        "tax": "vat15",
+        "price_unit": 3.98,
+        "price_unit_without_tax": 3.46,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 3.98,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108027910",
+        "product_name": "Detergente En Polvo Actiblu Fab 2000 G",
+        "product_description": "Detergente En Polvo Actiblu Fab 2000 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "78.25",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 46,
+        "tax": "vat15",
+        "price_unit": 6.39,
+        "price_unit_without_tax": 5.56,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 6.39,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108030566",
+        "product_name": "Lavavajilla En Crema Aroma A Lim\u00f3n Lava 450 G",
+        "product_description": "Lavavajilla En Crema Aroma A Lim\u00f3n Lava 450 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "1.50"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 47,
+        "tax": "vat15",
+        "price_unit": 1.73,
+        "price_unit_without_tax": 1.5,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 1.73,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108031667",
+        "product_name": "Detergente En Polvo Floral Xtra Power Cicl\u00f3n 1200 G",
+        "product_description": "Detergente En Polvo Floral Xtra Power Cicl\u00f3n 1200 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "3.47"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 48,
+        "tax": "vat15",
+        "price_unit": 3.99,
+        "price_unit_without_tax": 3.47,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 3.99,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108034240",
+        "product_name": "Mascarilla Intensiva Mascarilla Intensiva Herbal Essences Leche de Coco y Aloe 300 Ml Herbal Essence",
+        "product_description": "Mascarilla Intensiva Mascarilla Intensiva Herbal Essences Leche de Coco y Aloe 300 Ml Herbal Essences 300 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "71.94",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 49,
+        "tax": "vat15",
+        "price_unit": 6.95,
+        "price_unit_without_tax": 6.04,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 6.95,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108034321",
+        "product_name": "Acondicionador Biorenew Aceite Arg\u00e1n Marruecos Herbal Essences 400 Ml",
+        "product_description": "Acondicionador Biorenew Aceite Arg\u00e1n Marruecos Herbal Essences 400 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "48.64",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 50,
+        "tax": "vat15",
+        "price_unit": 10.28,
+        "price_unit_without_tax": 8.94,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 10.28,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108043484",
+        "product_name": "Jab\u00f3n En Barra Antibacterial Balance Saludable Protex 3 X 110 G",
+        "product_description": "Jab\u00f3n En Barra Antibacterial Balance Saludable Protex 3 X 110 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "2.60"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 51,
+        "tax": "vat15",
+        "price_unit": 2.99,
+        "price_unit_without_tax": 2.6,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.99,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108042500",
+        "product_name": "Acondicionador de Leche de Coco Herbal Essences Herbal Essences Nan",
+        "product_description": "Acondicionador de Leche de Coco Herbal Essences Herbal Essences Nan",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "48.64",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 52,
+        "tax": "vat15",
+        "price_unit": 10.28,
+        "price_unit_without_tax": 8.94,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 10.28,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108038846",
+        "product_name": "Crema de Peinar Biorenew con Aceite de Moringa Dorada Herbal Essences 300 Ml",
+        "product_description": "Crema de Peinar Biorenew con Aceite de Moringa Dorada Herbal Essences 300 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "64.77",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 53,
+        "tax": "vat15",
+        "price_unit": 7.72,
+        "price_unit_without_tax": 6.71,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 7.72,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108042539",
+        "product_name": "Shampoo Anticaspa Limpieza Renovadora Head & Shoulders Nan",
+        "product_description": "Shampoo Anticaspa Limpieza Renovadora Head & Shoulders Nan",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "94.16",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 54,
+        "tax": "vat15",
+        "price_unit": 5.31,
+        "price_unit_without_tax": 4.62,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 5.31,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108035251",
+        "product_name": "Crema Corporal Soft Milk Piel Seca Nivea 400 Ml",
+        "product_description": "Crema Corporal Soft Milk Piel Seca Nivea 400 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "58.96",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 55,
+        "tax": "vat15",
+        "price_unit": 8.48,
+        "price_unit_without_tax": 7.37,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 8.48,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108038435",
+        "product_name": "Detergente En Polvo Aloe Vera con Suavizante + Bicarbonato Deja 2 Kg",
+        "product_description": "Detergente En Polvo Aloe Vera con Suavizante + Bicarbonato Deja 2 Kg",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "77.04",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 56,
+        "tax": "vat15",
+        "price_unit": 6.49,
+        "price_unit_without_tax": 5.64,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 6.49,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108040519",
+        "product_name": "Shampoo Beb\u00e9 Original Johnson's 400 Ml",
+        "product_description": "Shampoo Beb\u00e9 Original Johnson's 400 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "85.62",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 57,
+        "tax": "vat15",
+        "price_unit": 5.84,
+        "price_unit_without_tax": 5.08,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 5.84,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108043162",
+        "product_name": "Jab\u00f3n En Barra de Avena Protex 3 X 110 G",
+        "product_description": "Jab\u00f3n En Barra de Avena Protex 3 X 110 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "2.60"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 58,
+        "tax": "vat15",
+        "price_unit": 2.99,
+        "price_unit_without_tax": 2.6,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.99,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108036551",
+        "product_name": "Jab\u00f3n \u00cdntimo \u00cdntimo Cleansing Wash Aloe Vera Feminine",
+        "product_description": "Jab\u00f3n \u00cdntimo \u00cdntimo Cleansing Wash Aloe Vera Feminine",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "94.52",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 59,
+        "tax": "vat15",
+        "price_unit": 5.29,
+        "price_unit_without_tax": 4.6,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 5.29,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108042847",
+        "product_name": "Chuleta de Lomo de Cerdo Supercarnes En Bandeja",
+        "product_description": "Chuleta de Lomo de Cerdo Supercarnes En Bandeja",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "71.63",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "3.98"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 60,
+        "tax": "vatZero",
+        "price_unit": 5.56,
+        "price_unit_without_tax": 5.56,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 5.56,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080291272",
+        "product_name": "Lavavajillas de Lim\u00f3n Lava 900 G",
+        "product_description": "Lavavajillas de Lim\u00f3n Lava 900 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "2.51"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 61,
+        "tax": "vat15",
+        "price_unit": 2.89,
+        "price_unit_without_tax": 2.51,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.89,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080296127",
+        "product_name": "Detergente En Polvo con Suavizante Cicl\u00f3n 2000 G",
+        "product_description": "Detergente En Polvo con Suavizante Cicl\u00f3n 2000 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "77.04",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 62,
+        "tax": "vat15",
+        "price_unit": 6.49,
+        "price_unit_without_tax": 5.64,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 6.49,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080778024",
+        "product_name": "L\u00e1piz Delineador de Ojos Coffe Joia Unidad",
+        "product_description": "L\u00e1piz Delineador de Ojos Coffe Joia Unidad",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "1.92"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 63,
+        "tax": "vat15",
+        "price_unit": 2.21,
+        "price_unit_without_tax": 1.92,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.21,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080778054",
+        "product_name": "Polvo Compacto Light Ivory Joia Unidad",
+        "product_description": "Polvo Compacto Light Ivory Joia Unidad",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.14"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 64,
+        "tax": "vat15",
+        "price_unit": 4.76,
+        "price_unit_without_tax": 4.14,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 4.76,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080846825",
+        "product_name": "Mascarilla Facial Active Hidra Bomb Green Tea Mask Garnier L\u00b4or\u00e9al 28 G",
+        "product_description": "Mascarilla Facial Active Hidra Bomb Green Tea Mask Garnier L\u00b4or\u00e9al 28 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "3.06"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 65,
+        "tax": "vat15",
+        "price_unit": 3.52,
+        "price_unit_without_tax": 3.06,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 3.52,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080846826",
+        "product_name": "Mascarilla Facial Hidra Bomb Revitalizante Garnier L\u00b4or\u00e9al 28 G",
+        "product_description": "Mascarilla Facial Hidra Bomb Revitalizante Garnier L\u00b4or\u00e9al 28 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "3.06"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 66,
+        "tax": "vat15",
+        "price_unit": 3.52,
+        "price_unit_without_tax": 3.06,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 3.52,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080318696",
+        "product_name": "Acondicionador Manuka Honey Herbal Essences 400 Ml",
+        "product_description": "Acondicionador Manuka Honey Herbal Essences 400 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "48.64",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 67,
+        "tax": "vat15",
+        "price_unit": 10.28,
+        "price_unit_without_tax": 8.94,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 10.28,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 2,
+        "product_code": "01011080775352",
+        "product_name": "Acondicionador Aloe y Mango Herbal Essences 250 Ml",
+        "product_description": "Acondicionador Aloe y Mango Herbal Essences 250 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "48.64",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "8.70"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 68,
+        "tax": "vat15",
+        "price_unit": 10.28,
+        "price_unit_without_tax": 8.94,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 20.56,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 2,
+        "product_code": "01011080775353",
+        "product_name": "Shampoo Aloe y Mango Herbal Essences 400 Ml",
+        "product_description": "Shampoo Aloe y Mango Herbal Essences 400 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "48.64",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "8.70"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 69,
+        "tax": "vat15",
+        "price_unit": 10.28,
+        "price_unit_without_tax": 8.94,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 20.56,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080897786",
+        "product_name": "Jab\u00f3n En Barra Banana y Aguacate Palmolive 3 X 110 G",
+        "product_description": "Jab\u00f3n En Barra Banana y Aguacate Palmolive 3 X 110 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "2.55"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 70,
+        "tax": "vat15",
+        "price_unit": 2.93,
+        "price_unit_without_tax": 2.55,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.93,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080900458",
+        "product_name": "Jab\u00f3n En Barra Avena y Az\u00facar Morena Palmolive 3 X 110 G",
+        "product_description": "Jab\u00f3n En Barra Avena y Az\u00facar Morena Palmolive 3 X 110 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "2.55"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 71,
+        "tax": "vat15",
+        "price_unit": 2.93,
+        "price_unit_without_tax": 2.55,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.93,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080903854",
+        "product_name": "Jab\u00f3n En Barra Naturals Oliva y Aloe Vera Palmolive 3 X 110 G",
+        "product_description": "Jab\u00f3n En Barra Naturals Oliva y Aloe Vera Palmolive 3 X 110 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "2.55"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 72,
+        "tax": "vat15",
+        "price_unit": 2.93,
+        "price_unit_without_tax": 2.55,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.93,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080319100",
+        "product_name": "Crema Corporal y de Manos Men Misty 400ml",
+        "product_description": "Crema Corporal y de Manos Men Misty 400ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "71.84",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 73,
+        "tax": "vat15",
+        "price_unit": 6.96,
+        "price_unit_without_tax": 6.05,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 6.96,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080652340",
+        "product_name": "Lavavajilla L\u00edquido Red Berry Frambuesa Pachuli Master 1000 Ml",
+        "product_description": "Lavavajilla L\u00edquido Red Berry Frambuesa Pachuli Master 1000 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "2.25"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 74,
+        "tax": "vat15",
+        "price_unit": 2.59,
+        "price_unit_without_tax": 2.25,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.59,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080450715",
+        "product_name": "Lomo Fino A Las Finas Hierbas Mr. Chancho Al Peso",
+        "product_description": "Lomo Fino A Las Finas Hierbas Mr. Chancho Al Peso",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "61.43",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.98"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 75,
+        "tax": "vatZero",
+        "price_unit": 8.1,
+        "price_unit_without_tax": 8.1,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 8.1,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "010110801090386",
+        "product_name": "CUPON SORTEO VIAJE EN CRUCERO",
+        "product_description": "CUPON SORTEO VIAJE EN CRUCERO",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71814,
+                "discount_rate": "100.00",
+                "discount_name": "MKT - CF SUPEROFERTAS CAMPA\u00d1A RECICLA CUPON  DEL 1 AL 28 DE AGOSTO",
+                "discount_group": "Descuento-Retail",
+                "amount": "0.01"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 76,
+        "tax": "vatZero",
+        "price_unit": 0.0,
+        "price_unit_without_tax": 0.0,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 0.0,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080964483",
+        "product_name": "Ch\u00eda Semillas Karay 220 G",
+        "product_description": "Ch\u00eda Semillas Karay 220 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "3.92"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 77,
+        "tax": "vatZero",
+        "price_unit": 3.92,
+        "price_unit_without_tax": 3.92,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 3.92,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080949326",
+        "product_name": "Jab\u00f3n En Barra Carb\u00f3n Activado D\u00e9tox Protex 6 X 110 G",
+        "product_description": "Jab\u00f3n En Barra Carb\u00f3n Activado D\u00e9tox Protex 6 X 110 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "87.11",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 78,
+        "tax": "vat15",
+        "price_unit": 5.74,
+        "price_unit_without_tax": 4.99,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 5.74,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "010110801011923",
+        "product_name": "Jab\u00f3n Liquido de Frutos Rojos para Manos y Cuerpo Aromaesense 580 Ml",
+        "product_description": "Jab\u00f3n Liquido de Frutos Rojos para Manos y Cuerpo Aromaesense 580 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "84.03",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 79,
+        "tax": "vat15",
+        "price_unit": 5.95,
+        "price_unit_without_tax": 5.17,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 5.95,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108017011",
+        "product_name": "Mascarilla Facial Col\u00e1geno Dearderm Nan",
+        "product_description": "Mascarilla Facial Col\u00e1geno Dearderm Nan",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "1.17"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 80,
+        "tax": "vat15",
+        "price_unit": 1.35,
+        "price_unit_without_tax": 1.17,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 1.35,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080486345",
+        "product_name": "Mascarilla Purificante Negro Montage Jeunesse 7th Heaven 10 Ml",
+        "product_description": "Mascarilla Purificante Negro Montage Jeunesse 7th Heaven 10 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "2.32"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 81,
+        "tax": "vat15",
+        "price_unit": 2.67,
+        "price_unit_without_tax": 2.32,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.67,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108014778",
+        "product_name": "Mascarilla Facial de Aloe Vera Dearderm Por 25ml / .85fl",
+        "product_description": "Mascarilla Facial de Aloe Vera Dearderm Por 25ml / .85fl",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "1.17"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 82,
+        "tax": "vat15",
+        "price_unit": 1.35,
+        "price_unit_without_tax": 1.17,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 1.35,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108035969",
+        "product_name": "Mascarilla Facial Purificante Celkin Unidad",
+        "product_description": "Mascarilla Facial Purificante Celkin Unidad",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "1.02"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 83,
+        "tax": "vat15",
+        "price_unit": 1.17,
+        "price_unit_without_tax": 1.02,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 1.17,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108037122",
+        "product_name": "Mascarilla Facial Reafirmante Celkin Por 20gr",
+        "product_description": "Mascarilla Facial Reafirmante Celkin Por 20gr",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "1.02"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 84,
+        "tax": "vat15",
+        "price_unit": 1.17,
+        "price_unit_without_tax": 1.02,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 1.17,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108021055",
+        "product_name": "Mascarilla Facial Perla Blanca Dearderm Nan",
+        "product_description": "Mascarilla Facial Perla Blanca Dearderm Nan",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "1.17"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 85,
+        "tax": "vat15",
+        "price_unit": 1.35,
+        "price_unit_without_tax": 1.17,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 1.35,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108012434",
+        "product_name": "Jab\u00f3n \u00cdntimo Masculino Menlac",
+        "product_description": "Jab\u00f3n \u00cdntimo Masculino Menlac",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "80.39",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 86,
+        "tax": "vat15",
+        "price_unit": 6.22,
+        "price_unit_without_tax": 5.41,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 6.22,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108029604",
+        "product_name": "Jab\u00f3n L\u00edquido de Manos con Avena Protex 221 Ml",
+        "product_description": "Jab\u00f3n L\u00edquido de Manos con Avena Protex 221 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "2.90"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 87,
+        "tax": "vat15",
+        "price_unit": 3.34,
+        "price_unit_without_tax": 2.9,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 3.34,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108038805",
+        "product_name": "Jab\u00f3n L\u00edquido para Manos y Cuerpo Hidratante Antibacterial Avena y Miel Bacterion 1000 Ml",
+        "product_description": "Jab\u00f3n L\u00edquido para Manos y Cuerpo Hidratante Antibacterial Avena y Miel Bacterion 1000 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "3.29"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 88,
+        "tax": "vat15",
+        "price_unit": 3.78,
+        "price_unit_without_tax": 3.29,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 3.78,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108019241",
+        "product_name": "Crema de Peinar Biorenew Leche de Coco y Aloe Herbal Essences 300 Ml",
+        "product_description": "Crema de Peinar Biorenew Leche de Coco y Aloe Herbal Essences 300 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "64.77",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 89,
+        "tax": "vat15",
+        "price_unit": 7.72,
+        "price_unit_without_tax": 6.71,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 7.72,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108012964",
+        "product_name": "Shampoo Biorenew Aceite Arg\u00e1n Morocco Herbal Essences 400 Ml",
+        "product_description": "Shampoo Biorenew Aceite Arg\u00e1n Morocco Herbal Essences 400 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "48.64",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 90,
+        "tax": "vat15",
+        "price_unit": 10.28,
+        "price_unit_without_tax": 8.94,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 10.28,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108023090",
+        "product_name": "Crema de Peinar Biorenew Aceite de Arg\u00e1n de Marruecos y Aloe Herbal Essences 300 Ml",
+        "product_description": "Crema de Peinar Biorenew Aceite de Arg\u00e1n de Marruecos y Aloe Herbal Essences 300 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "64.77",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 91,
+        "tax": "vat15",
+        "price_unit": 7.72,
+        "price_unit_without_tax": 6.71,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 7.72,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108034706",
+        "product_name": "Shampoo Biorenew Leche de Coco Herbal Essences 400 Ml",
+        "product_description": "Shampoo Biorenew Leche de Coco Herbal Essences 400 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "48.64",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 92,
+        "tax": "vat15",
+        "price_unit": 10.28,
+        "price_unit_without_tax": 8.94,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 10.28,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108040612",
+        "product_name": "Jab\u00f3n En Barra Herbal Protex 3 X 110 G",
+        "product_description": "Jab\u00f3n En Barra Herbal Protex 3 X 110 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "2.60"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 93,
+        "tax": "vat15",
+        "price_unit": 2.99,
+        "price_unit_without_tax": 2.6,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.99,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "01011080775334",
+        "product_name": "Acondicionador Bio Renew Manzanilla Herbal Essences 400 Ml",
+        "product_description": "Acondicionador Bio Renew Manzanilla Herbal Essences 400 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "48.64",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.35"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 94,
+        "tax": "vat15",
+        "price_unit": 10.28,
+        "price_unit_without_tax": 8.94,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 10.28,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108028080",
+        "product_name": "Jab\u00f3n de Tocador Algas Marinas Frescura Natural Ninacuro 360 G",
+        "product_description": "Jab\u00f3n de Tocador Algas Marinas Frescura Natural Ninacuro 360 G",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "2.15"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 95,
+        "tax": "vat15",
+        "price_unit": 2.47,
+        "price_unit_without_tax": 2.15,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 2.47,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "0101108041502",
+        "product_name": "Vinagre De Manzana Nature's Heart 500 Ml",
+        "product_description": "Vinagre De Manzana Nature's Heart 500 Ml",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": 71818,
+                "discount_rate": "100.00",
+                "discount_name": "MKT- TIPTI BASE  $5 DE DESCUENTO EN TU COMPRA SABADO 3 DE AGOSTO 2024 MTM",
+                "discount_group": "Descuento-Tipti",
+                "amount": "4.10"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 96,
+        "tax": "vat15",
+        "price_unit": 4.72,
+        "price_unit_without_tax": 4.1,
+        "margin": "10.00",
+        "validate_inventory": "true",
+        "line_total": 4.72,
+        "product_code_secundario": "01011080900462"
+    },
+    {
+        "quantity": 1,
+        "product_code": "SHIPPING_PRIME",
+        "product_name": "Costo de Env\u00edo",
+        "product_description": "Costo de Env\u00edo",
+        "revenue_source": "PRODUCT",
+        "discounts": [
+            {
+                "discount_id": "0000",
+                "discount_rate": "100.00",
+                "discount_name": "PRIME-SHIPPING-COST-DISCOUNT",
+                "discount_group": "Descuento-envio-prime",
+                "amount": "3.50"
+            }
+        ],
+        "category1": "null",
+        "category2": "null",
+        "category3": "null",
+        "category4": "null",
+        "sequence": 97,
+        "tax": "vat15",
+        "price_unit": 0.0,
+        "price_unit_without_tax": 0.0,
+        "margin": 0.0,
+        "validate_inventory": "false",
+        "line_total": 0.0,
+        "product_code_secundario": "SHIPPING_PRIME"
+    }
+]
