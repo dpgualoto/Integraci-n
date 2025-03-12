@@ -49,6 +49,7 @@ def procesar_lineas_y_descuentos(data):
         ])
         nueva_linea["linenum"] = linenum
         nueva_linea["order"]=data.get("order")
+        nueva_linea["bill_number"]=data.get("bill_number")
         lineas.append(nueva_linea)
 
         descuentos.extend(
@@ -68,7 +69,7 @@ def procesar_lineas_y_descuentos(data):
 
 def procesar_pagos(data):
     return [
-        OrderedDict({**pago, "order": data.get("order")})
+        OrderedDict({**pago, "order": data.get("order"), "billnumber": data.get("bill_number")})
         for pago in data.get("payments", [])
     ]
 
@@ -78,15 +79,14 @@ def procesar_refund(data):
         OrderedDict({**refund_data, "tipticard_id": data.get("user", {}).get("tipticard_id"), "order": data.get("order")})
     ]
 
-
-
 def insertar_cabecera_thread(cabecera, sap):
     sap.insertar_cabecera(cabecera)
 
 def insertar_lineas_thread(lineas, sap):
-    for linea in lineas:
-        sap.insertar_lineas(linea)
+    sap.insertar_lineas(lineas)
 
+def insertar_pagos_thread(pagos,sap):
+    sap.insertar_pagos(pagos)
 
 @app.route('/procesar', methods=['POST'])
 def procesar_json():
@@ -116,23 +116,25 @@ def procesar_json():
          # Iniciar hilos para procesar cabecera y lineas en paralelo
         cabecera_thread = threading.Thread(target=insertar_cabecera_thread, args=(cabecera, sap))
         lineas_thread = threading.Thread(target=insertar_lineas_thread, args=(lineas, sap))
+        pagos_thread = threading.Thread(target=insertar_pagos_thread, args=(pagos, sap))
 
         cabecera_thread.start()
         lineas_thread.start()
+        pagos_thread.start()
 
         cabecera_thread.join()
         lineas_thread.join()
-        
-        '''sap.obtener_session()
-        sap.insertar_cabecera(cabecera)
-        sap.insertar_lineas(lineas)
-        #sap.eliminar_lineas_en_rango(278,375)
-        socios=sap.obtener_socios_de_negocios()
-        sap.crear_socio(socios)'''
+        pagos_thread.join()
+        #sap.obtener_session()
+        #sap.insertar_cabecera(cabecera)
+        #sap.insertar_lineas(lineas)
+        #sap.eliminar_lineas_en_rango(376,571)
+        #socios=sap.obtener_socios_de_negocios()
+        #sap.crear_socio(socios)
 
-        '''response_data2 = OrderedDict([
+        response_data2 = OrderedDict([
             ("cabecera", cabecera),
-        ])'''
+        ])
 
         # Imprimir el JSON generado antes de devolverlo
        # print("JSON generado en el backend:", json.dumps(response_data2, indent=4))

@@ -1,0 +1,49 @@
+{
+    "order": 170,
+    "Numero_FacturasCompras": "756484133441591",
+    "bill_number": "001-100-006088457",
+    "authorization_number": "1973379665410807",
+    "date": "2025-02-21 10:18:39",
+    "user": {
+        "ref": "user@example.com",
+        "name": "John Doe",
+        "tipticard_id": 924258,
+        "email": "user@example.com"
+    },
+    "partner": {
+        "name": "John Doe",
+        "vat": "6432870702",
+        "vat_type": "05",
+        "street": "123 Main St",
+        "phone": "+593 990376052",
+        "email": "user@example.com",
+        "city": "Quito",
+        "Grupo": "B2B",
+        "Subcategoria": "Subgrupo B2B"
+    },
+    "sale_lines": [
+        {
+            "quantity": 1,
+            "product_code": "010162989086828427",
+            "product_name": "Sample Product",
+            "product_description": "Sample Product Description",
+            "revenue_source": "PRODUCT",
+            "discounts": [
+                {
+                    "discount_id": 80858,
+                    "discount_rate": "35.00",
+                    "discount_name": "Sample Discount",
+                    "discount_group": "Discount-Group",
+                    "amount": "9.57"
+                }
+            ],
+            "tax": "vat15",
+            "price_unit": 4.0292736097501365,
+            "price_unit_without_tax": 7.895425191522202,
+            "margin": "10.00",
+            "validate_inventory": true,
+            "line_total": 33.43718339382619,
+            "product_code_secundario": "010173683409391766"
+        }
+    ]
+}

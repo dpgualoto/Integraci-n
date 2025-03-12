@@ -1,0 +1,15 @@
+{
+    "Configuracion": {
+        "host": "13.92.0.225",
+        "port": 50000,
+        "user": "SYSTEM",
+        "password": "B1Admin$",
+        "database_name": "SBO_EC_TENA4_01",
+        "userSAP": "USUARIO7",
+        "passSAP": "HYC909",
+        "dns": "TIPTI", 
+        "vista": "HBT_TIPTISN",
+        "vista2": "HBT_TIPTIITEM",
+        "vista3":"HBT_FACTURAS_VENTASTIPTI"
+    }
+}

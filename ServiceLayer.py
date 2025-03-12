@@ -180,7 +180,8 @@ class SAPBusinessOne:
                 "U_Tipti_LineTotal": linea.get("line_total"),
                 "U_Tipti_margin": linea.get("margin"),
                 "U_Tipti_validate_inventory": linea.get("validate_inventory"),
-                "U_Tipti_Estado_Lineas": "P"
+                "U_Tipti_Estado_Lineas": "P",
+                "U_Tipti_Secuencial": linea.get("bill_number")
             }
 
             # Imprimir la trama (el JSON a enviar)
@@ -194,6 +195,50 @@ class SAPBusinessOne:
                     print(f"Registro de línea insertado con éxito, ID: {response.json()['Code']}")
                 else:
                     print(f"Error al insertar el registro de línea: {response.text}")
+            except requests.exceptions.Timeout:
+                print("La solicitud ha superado el tiempo de espera.")
+            except Exception as e:
+                print(f"Error al realizar la solicitud: {e}")
+
+    def insertar_pagos(self, pagos):
+    # Verificar si la sesión está activa antes de la operación
+        if not self.session_id:
+            print("No se ha obtenido una sesión válida.")
+            if not self.obtener_session():  # Si no hay sesión, intenta obtenerla
+                print("No se pudo obtener la sesión.")
+                return None
+
+        url = f"{self.service_layer_url}U_TIPTI_PAGOS"  # URL para los pagos (ajústalo según tu API)
+
+        # Preparar los datos de los pagos
+        for pago in pagos:
+            pago_data = {
+                "Name": f"Pago {pago.get('order')}-{pago.get('id_interno')}",  # Usar el número de la factura como referencia
+                "U_Tipti_ID_interno": pago.get("id_interno"),
+                "U_Tipti_Method": pago.get("method"),
+                "U_Tipti_Amount": pago.get("amount"),
+                "U_Tipti_Date": pago.get("date"),
+                "U_Tipti_id_externo": pago.get("id_externo"),
+                "U_Tipti_Autorizacion": pago.get("authorization_code"),
+                "U_Tipti_Orden": pago.get("order"),
+                "U_Tipti_BillNumber": pago.get("billnumber"),
+            }
+
+            headers = {
+                "Content-Type": "application/json",
+                "Cookie": f"B1SESSION={self.session_id}; ROUTEID=.node0"  # Configuración de las cookies correctamente
+            }
+
+            print(self.session_id)
+
+            try:
+                # Intentar la inserción del pago
+                response = requests.post(url, json=pago_data, headers=headers, verify=False, timeout=30)
+
+                if response.status_code == 201:
+                    print(f"Pago registrado con éxito, ID: {response.json()['Code']}")
+                else:
+                    print(f"Error al insertar el pago: {response.text}")
             except requests.exceptions.Timeout:
                 print("La solicitud ha superado el tiempo de espera.")
             except Exception as e:
@@ -229,98 +274,7 @@ class SAPBusinessOne:
             except Exception as e:
                 print(f"Error al realizar la solicitud para Code {code}: {e}")
     
-    def obtener_socios_de_negocios(self):
-        # Establecer conexión ODBC usando el DNS configurado
-        connection_string = f'DSN={self.DNS};UID={self.user};PWD={self.password};'
-        
-        # Establecer la conexión ODBC con la base de datos HANA
-        conn = pyodbc.connect(connection_string)
-        cursor = conn.cursor()
-        
-        # Ejecutar la consulta a la vista
-        consulta = f"""
-        SELECT *
-        FROM {self.database_name}.{self.vista}
-        """
-        cursor.execute(consulta)
-        socios = cursor.fetchall() 
-        
-        # Cerrar la conexión
-        conn.close()
 
-        # Retornar los resultados de la consulta
-        print(socios)
-        return socios
-
-    def crear_socio(self, socios):
-        # Verificar si la sesión está activa antes de la operación
-        if not self.session_id:
-            print("No se ha obtenido una sesión válida.")
-            if not self.obtener_session():  # Si no hay sesión, intenta obtenerla
-                print("No se pudo obtener la sesión.")
-                return None
-
-        for socio in socios:
-            # Asegurarse de que los datos del socio de negocios sean correctos
-            partner_data = {
-                "CardCode": socio.LicTradNum,
-                "CardName": socio.CardName,
-                "FederalTaxID": socio.LicTradNum,
-                "CardType": "C",  # Ajusta el tipo de socio según sea necesario
-                "Phone1": socio.Phone1,
-                "City": socio.Ciudad,
-                "GroupCode": socio.GroupCode
-                #"SubCategoria": socio.SubCategoria  
-            }
-            #print("Datos del socio de negocios a crear:", partner_data)
-
-            url = f"{self.service_layer_url}BusinessPartners"
-            headers = {
-                "Content-Type": "application/json",
-                "Cookie": f"B1SESSION={self.session_id}; ROUTEID=.node0"
-            }
-
-            try:
-                # Realizar la solicitud POST para crear el socio de negocios
-                response = requests.post(url, json=partner_data, headers=headers, verify=False, timeout=30)
-
-                # Imprimir más detalles de la respuesta
-                #print("Código de respuesta:", response.status_code)
-                #print("Encabezados de la respuesta:", response.headers)
-                #print("Respuesta del servidor:", response.text)
-
-                if response.status_code == 201:
-                    print(f"Socio de negocios creado con éxito, ID: {response.json()['CardCode']}")
-                else:
-                    print(f"Error al crear el socio de negocios. Código de error: {response.status_code}")
-                    print(f"Detalles del error: {response.text}")
-            except Exception as e:
-                print(f"Error al realizar la solicitud: {e}")
-
-    def obtener_item(self):
-        # Establecer conexión ODBC usando el DNS configurado
-        connection_string = f'DSN={self.DNS};UID={self.user};PWD={self.password};'
-        
-        # Establecer la conexión ODBC con la base de datos HANA
-        conn = pyodbc.connect(connection_string)
-        cursor = conn.cursor()
-        
-        # Ejecutar la consulta a la vista
-        consulta = f"""
-        SELECT *
-        FROM {self.database_name}.{self.vista2}
-        """
-        cursor.execute(consulta)
-        items = cursor.fetchall() 
-        
-        # Cerrar la conexión
-        conn.close()
-
-        # Retornar los resultados de la consulta
-        print(items)
-        return items
-    
-    def crear_items(self, items):
         # Verificar si la sesión está activa antes de la operación
         if not self.session_id:
             print("No se ha obtenido una sesión válida.")
