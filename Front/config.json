@@ -10,6 +10,7 @@
         "dns": "TIPTI", 
         "vista": "HBT_TIPTISN",
         "vista2": "HBT_TIPTIITEM",
-        "vista3":"HBT_FACTURAS_VENTASTIPTI"
+        "vista3":"HBT_FACTURAS_VENTASTIPTI",
+        "vista4":"TIPTI_PAGOS"
     }
 }

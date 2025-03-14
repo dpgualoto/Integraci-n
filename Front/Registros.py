@@ -8,6 +8,7 @@ from collections import defaultdict
 import pandas as pd 
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
+from decimal import Decimal
 class SAPBusinessOne:
     def __init__(self, config_file='config.json'):
         # Cargar configuración desde el archivo JSON
@@ -25,6 +26,7 @@ class SAPBusinessOne:
         self.vista = self.config['Configuracion']['vista']
         self.vista2 = self.config['Configuracion']['vista2']
         self.vista3 = self.config['Configuracion']['vista3']
+        self.vista4 = self.config['Configuracion']['vista4']
         self.session_id = None
 
     def obtener_session(self):
@@ -351,6 +353,137 @@ class SAPBusinessOne:
         except Exception as e:
             print(f"Error al actualizar la orden {orden}: {str(e)}")
 
+    def obtener_Pagos(self):
+        # Establecer conexión ODBC para obtener los ítems
+        connection_string = f'DSN={self.DNS};UID={self.user};PWD={self.password};'
+        conn = pyodbc.connect(connection_string)
+        cursor = conn.cursor()
+
+        # Ejecutar la consulta para obtener los ítems
+        consulta = f"SELECT * FROM {self.company_db}.{self.vista4}"  # Ajusta según la tabla de ítems que tengas
+        cursor.execute(consulta)
+        pagos = cursor.fetchall()
+        
+        conn.close()
+        return pagos
+    
+    def crear_Pago(self, pagos,id,orden,billnumber):
+        if not self.session_id:
+            if not self.obtener_session():
+                return None
+
+        pago_data = {
+            "CardCode": pagos.CardCode,
+            "PaymentInvoices": [
+                {
+                    "DocEntry": pagos.DocEntry,  
+                    "SumApplied": float(pagos.U_Tipti_Amount)
+                }
+            ],
+            "PaymentCreditCards": [
+                {
+                    "CreditCard": pagos.CodigoTC,
+                    "CreditCardNumber": pagos.CardNum,
+                    "CardValidUntil": pagos.FechaTC,
+                    "VoucherNum": "1429",
+                    "CreditSum": float(pagos.U_Tipti_Amount)
+                }
+            ],
+            "Remarks":pagos.Remark
+        }
+        print(pago_data)
+        #print(json.dumps(pago_data, indent=4))
+        url = f"{self.service_layer_url}IncomingPayments"
+        headers = {
+            "Content-Type": "application/json",
+            "Cookie": f"B1SESSION={self.session_id}; ROUTEID=.node0"
+        }
+
+        try:
+            # Realizar la solicitud POST para crear el ítem
+            response = requests.post(url, json=pago_data, headers=headers, verify=False, timeout=30)
+            if response.status_code == 201:
+                print(f"Pago creado con éxito, Código: {response.json()['DocNum']}")
+                self.actualizar_estado_pago(id,orden,billnumber)
+
+            else:
+                print(f"Error al crear el ítem. Código de error: {response.status_code}")
+                print(f"Detalles del error: {response.text}")
+                self.actualizar_estado_pago_error(id,orden,billnumber)
+        except Exception as e:
+            print(f"Error al realizar la solicitud: {e}")
+    
+    def actualizar_estado_pago(self,id,orden,secuencial):
+        """Actualiza los campos U_Procesado en Pagos"""
+        try:
+            orden = str(orden)
+            #secuencial = next(iter(secuencial))
+            #print("Orden estado"+ orden)
+            #print("Secuencial"+ secuencial)
+            #print("Id:"+ id)
+            connection_string = f'DSN={self.DNS};UID={self.user};PWD={self.password};'
+            conn = pyodbc.connect(connection_string)
+            cursor = conn.cursor()
+
+           # Actualizar la tabla @HBT_CABECERA
+            query_pagos = """
+                UPDATE "{0}"."@TIPTI_PAGOS"
+                SET "U_Tipti_Estado_Pagos"= 'S'
+                WHERE "U_Tipti_Orden" = ?
+                AND "U_Tipti_BillNumber" = ?
+                AND "U_Tipti_ID_interno" = ?
+            """.format(self.company_db)
+            
+            #print(query_pagos)
+            cursor.execute(query_pagos, (orden,secuencial,id))
+            # Confirmar cambios en la base de datos
+            conn.commit()
+            print(f"Pago {id} actualizada correctamente")
+            # Cerrar conexión
+            cursor.close()
+            conn.close()
+
+        except Exception as e:
+            print(f"Error al actualizar el pago {id}: {str(e)}")
+
+    def actualizar_estado_pago_error(self,id,orden,secuencial):
+        """Actualiza los campos U_Procesado en HBT_CABECERA y U_Tipti_Estado_Lineas en HBT_LINEAS"""
+        try:
+            orden = str(orden)
+            #secuencial = next(iter(secuencial))
+            #print(orden)
+            #print(secuencial)
+            connection_string = f'DSN={self.DNS};UID={self.user};PWD={self.password};'
+            conn = pyodbc.connect(connection_string)
+            cursor = conn.cursor()
+
+           # Actualizar la tabla @HBT_CABECERA
+            query_pagos = """
+                UPDATE "{0}"."@TIPTI_PAGOS"
+                SET "U_Tipti_Estado_Pagos" = 'E'
+                WHERE "U_Tipti_Orden" = ?
+                AND "U_Tipti_BillNumber" = ?
+                AND "U_Tipti_ID_interno" = ?
+            """.format(self.company_db)
+            
+            #print(query_pagos)
+            cursor.execute(query_pagos, (orden,secuencial,id))
+            # Confirmar cambios en la base de datos
+            conn.commit()
+            print(f"Pago {id} actualizada correctamente")
+            # Cerrar conexión
+            cursor.close()
+            conn.close()
+
+        except Exception as e:
+            print(f"Error al actualizar el pago {id}: {str(e)}")
+
+    # Función para convertir Decimal a float
+    def decimal_default(obj):
+        if isinstance(obj, Decimal):
+            return float(obj)
+        raise TypeError("Type not serializable")
+    
 # Instancia de SAPBusinessOne
 sap = SAPBusinessOne(config_file='config.json')
 
@@ -369,6 +502,19 @@ def registrar_items():
         for item in items:
             print(f"Registrando ítem: {item.ItemName} ({item.ItemCode})")
             executor.submit(sap.crear_item, item)
+
+# Función para registrar ítems en paralelo usando el pool de hilos
+def registrar_pagos():
+    Pagos = sap.obtener_Pagos()
+    with ThreadPoolExecutor(max_workers=10) as executor:  # Limita el número de hilos concurrentes
+        for pago in Pagos:
+            print(f"Registrando pago: {pago.U_Tipti_ID_interno} ({pago.U_Tipti_Orden})")
+            id=pago.U_Tipti_ID_interno
+            orden=pago.U_Tipti_Orden
+            billnumber=pago.U_Tipti_BillNumber
+            executor.submit(sap.crear_Pago, pago,id,orden,billnumber)
+
+
 
 # Función para registrar las facturas en paralelo
 def registrar_facturas():
@@ -393,6 +539,8 @@ def main():
 
     # Registrar facturas
     registrar_facturas()
+
+    registrar_pagos()
    
 
 if __name__ == "__main__":

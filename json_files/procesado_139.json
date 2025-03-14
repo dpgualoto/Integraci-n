@@ -1,0 +1,125 @@
+{
+    "cabecera": {
+        "order": 139,
+        "Numero_FacturasCompras": "230964940159274",
+        "bill_number": "001-100-731371487",
+        "authorization_number": "6695533609310730",
+        "date": "2025-03-12 10:18:39",
+        "user": {
+            "ref": "user@example.com",
+            "name": "John Doe",
+            "tipticard_id": 507603,
+            "email": "user@example.com"
+        },
+        "partner": {
+            "name": "John Doe",
+            "vat": "2555822543",
+            "vat_type": "05",
+            "street": "123 Main St",
+            "phone": "+593 990376052",
+            "email": "user@example.com",
+            "city": "Quito",
+            "Grupo": "B2B",
+            "Subcategoria": "Subgrupo B2B"
+        },
+        "purchase_shopper": null,
+        "delivery_shopper": null,
+        "retailer_bills": null,
+        "vat_subtotal": null,
+        "amount_total": null,
+        "retailer_name": null,
+        "retailer_ruc": null,
+        "retailer_id": null,
+        "Ciudad_id": null,
+        "Ciudad_desc": null,
+        "Sector_id": null,
+        "Sector_desc": null,
+        "Tienda_id": null,
+        "Tienda_desc": null,
+        "delivery_information": null
+    },
+    "lineas": [
+        {
+            "quantity": 4,
+            "product_code": "3651454975589",
+            "product_name": "Sample Product",
+            "product_description": "Sample Product Description",
+            "revenue_source": "PRODUCT",
+            "tax": "vat15",
+            "price_unit": 6.892955152023639,
+            "price_unit_without_tax": 3.590135994971847,
+            "margin": "10.00",
+            "validate_inventory": true,
+            "line_total": 30.977618076769648,
+            "product_code_secundario": "010175746211774",
+            "linenum": 0,
+            "order": 139,
+            "bill_number": "001-100-731371487"
+        },
+        {
+            "quantity": 100,
+            "product_code": "3651454975589",
+            "product_name": "Sample Product",
+            "product_description": "Sample Product Description",
+            "revenue_source": "PRODUCT",
+            "tax": "vat15",
+            "price_unit": 6.892955152023639,
+            "price_unit_without_tax": 3.590135994971847,
+            "margin": "10.00",
+            "validate_inventory": true,
+            "line_total": 30.977618076769648,
+            "product_code_secundario": "010175746211",
+            "linenum": 1,
+            "order": 139,
+            "bill_number": "001-100-731371487"
+        }
+    ],
+    "pagos": [
+        {
+            "id_interno": "6233913(1/1)",
+            "method": "pymtz",
+            "amount": "19.40",
+            "date": "2025-12-03",
+            "id_externo": "DF-25447131",
+            "authorization_code": "973497",
+            "order": 139,
+            "billnumber": "001-100-731371487"
+        },
+        {
+            "id_interno": "6233907(1/1)",
+            "method": "tipti",
+            "amount": "50",
+            "date": "2025-12-03",
+            "id_externo": null,
+            "authorization_code": null,
+            "order": 139,
+            "billnumber": "001-100-731371487"
+        }
+    ],
+    "descuentos": [
+        {
+            "order": 139,
+            "linenum": 0,
+            "discount_id": 66870,
+            "discount_name": "Sample Discount",
+            "discount_rate": "31.00",
+            "discount_group": "Discount-Group",
+            "amount": "4.84"
+        },
+        {
+            "order": 139,
+            "linenum": 1,
+            "discount_id": 66870,
+            "discount_name": "Sample Discount",
+            "discount_rate": "31.00",
+            "discount_group": "Discount-Group",
+            "amount": "4.84"
+        }
+    ],
+    "refund": [
+        {
+            "tipticard_id": 507603,
+            "order": 139
+        }
+    ]
+}

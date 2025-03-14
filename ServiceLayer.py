@@ -2,7 +2,7 @@ import requests
 import json
 from urllib3.exceptions import InsecureRequestWarning
 import pyodbc
-
+from datetime import datetime
 # Desactivar la advertencia InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
@@ -61,10 +61,11 @@ class SAPBusinessOne:
                 return None
         
         url = f"{self.service_layer_url}U_HBT_CABECERA"
-        
+        # Obtener la fecha y hora actual
+        fecha_actual = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         # Prepara los datos de la cabecera
         cabecera_data = {
-            "Code": str(cabecera.get("order")),
+            "Code": str(cabecera.get("order"))+cabecera.get("bill_number"),
             "Name": f"Orden {cabecera.get('order')}",
             "U_Tipti_Orden": cabecera.get("order"),
             "U_Tipti_NumeroFC": cabecera.get("Numero_FacturasCompras"),
@@ -112,7 +113,8 @@ class SAPBusinessOne:
             "U_Tipti_delivery_sector": cabecera["delivery_information"].get("sector") if cabecera["delivery_information"] else None,
             "U_Tipti_delivery_address": cabecera["delivery_information"].get("address") if cabecera["delivery_information"] else None,
             "U_Procesado": "P",  # Puedes ajustar según sea necesario
-            "U_Tipti_Estado_Cabecera": "Pendiente"  # Puedes ajustar según sea necesario
+            "U_Tipti_Estado_Cabecera": ""  # Puedes ajustar según sea necesario
+            ,"U_Tipti_Fecha_Reg": fecha_actual
         }
 
         headers = {
@@ -148,7 +150,8 @@ class SAPBusinessOne:
                 return None
 
         url = f"{self.service_layer_url}U_HBT_LINEAS"  # Cambiar la URL si es diferente
-
+        # Obtener la fecha y hora actual
+        fecha_actual = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         headers = {
             "Content-Type": "application/json",
             "Cookie": f"B1SESSION={self.session_id}; ROUTEID=.node0"  # Configuración de las cookies correctamente
@@ -181,7 +184,8 @@ class SAPBusinessOne:
                 "U_Tipti_margin": linea.get("margin"),
                 "U_Tipti_validate_inventory": linea.get("validate_inventory"),
                 "U_Tipti_Estado_Lineas": "P",
-                "U_Tipti_Secuencial": linea.get("bill_number")
+                "U_Tipti_Secuencial": linea.get("bill_number"),
+                "U_Tipti_Fecha_Reg": fecha_actual
             }
 
             # Imprimir la trama (el JSON a enviar)
@@ -209,7 +213,8 @@ class SAPBusinessOne:
                 return None
 
         url = f"{self.service_layer_url}U_TIPTI_PAGOS"  # URL para los pagos (ajústalo según tu API)
-
+        # Obtener la fecha y hora actual
+        fecha_actual = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         # Preparar los datos de los pagos
         for pago in pagos:
             pago_data = {
@@ -222,6 +227,9 @@ class SAPBusinessOne:
                 "U_Tipti_Autorizacion": pago.get("authorization_code"),
                 "U_Tipti_Orden": pago.get("order"),
                 "U_Tipti_BillNumber": pago.get("billnumber"),
+                "U_Tipti_Estado_Pagos":'P',
+                "U_Tipti_Fecha_Reg": fecha_actual
+
             }
 
             headers = {

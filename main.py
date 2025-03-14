@@ -88,7 +88,7 @@ def insertar_lineas_thread(lineas, sap):
 def insertar_pagos_thread(pagos,sap):
     sap.insertar_pagos(pagos)
 
-@app.route('/procesar', methods=['POST'])
+"""@app.route('/procesar', methods=['POST'])
 def procesar_json():
     try:
         data = request.get_json() 
@@ -143,7 +143,56 @@ def procesar_json():
         return jsonify(response_data), 200
 
     except Exception as e:
+        return jsonify({"error": str(e)}), 400"""
+
+@app.route('/procesar', methods=['POST'])
+def procesar_json():
+    try:
+        data = request.get_json() 
+        cabecera = procesar_cabecera(data)
+        lineas, descuentos = procesar_lineas_y_descuentos(data)
+        pagos = procesar_pagos(data)
+        refund = procesar_refund(data)
+
+        # Intentar insertar la cabecera y verificar si fue exitosa
+        cabecera_response = sap.insertar_cabecera(cabecera)
+        if cabecera_response is None:  # Si la cabecera no se insertó correctamente
+            print(cabecera.order)
+            return jsonify({"error": "No se pudo registrar la cabecera, las líneas y los pagos no se procesarán."}), 400
+        
+        # Iniciar los hilos para insertar líneas y pagos si la cabecera fue exitosa
+        lineas_thread = threading.Thread(target=sap.insertar_lineas, args=(lineas,))
+        pagos_thread = threading.Thread(target=sap.insertar_pagos, args=(pagos,))
+
+        lineas_thread.start()
+        pagos_thread.start()
+
+        # Esperar a que los hilos terminen
+        lineas_thread.join()
+        pagos_thread.join()
+
+        # Construir el JSON de respuesta
+        response_data = OrderedDict([
+            ("cabecera", cabecera),
+            ("lineas", lineas),
+            ("pagos", pagos),
+            ("descuentos", descuentos),
+            ("refund", refund),
+        ])
+
+        # Guardar el archivo JSON en el servidor
+        json_filename = f"procesado_{data.get('order')}.json"
+        json_file_path = os.path.join(UPLOAD_FOLDER, json_filename)
+        with open(json_file_path, 'w', encoding='utf-8') as f:
+            json.dump(response_data, f, ensure_ascii=False, indent=4)
+
+        # Devolver la respuesta JSON y la ruta del archivo generado
+        return jsonify(response_data), 200
+
+    except Exception as e:
         return jsonify({"error": str(e)}), 400
+
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
