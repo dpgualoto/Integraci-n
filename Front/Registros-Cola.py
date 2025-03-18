@@ -10,6 +10,15 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from decimal import Decimal
 import time
+from collections import deque
+import threading
+# Definir una cola de tareas
+facturas_queue = deque()
+
+# Definir un conjunto para controlar los socios de negocios e ítems creados
+socios_creados = set()
+items_creados = set()
+
 class SAPBusinessOne:
     def __init__(self, config_file='config.json'):
         # Cargar configuración desde el archivo JSON
@@ -492,21 +501,6 @@ class SAPBusinessOne:
 # Instancia de SAPBusinessOne
 sap = SAPBusinessOne(config_file='config.json')
 
-# Función para registrar socios de negocios en paralelo usando el pool de hilos
-def registrar_socios():
-    socios = sap.obtener_socios_de_negocios()
-    with ThreadPoolExecutor(max_workers=10) as executor:  # Limita el número de hilos concurrentes
-        for socio in socios:
-            print(f"Registrando socio de negocios: {socio.CardName} ({socio.LicTradNum})")
-            executor.submit(sap.crear_socio, socio)
-
-# Función para registrar ítems en paralelo usando el pool de hilos
-def registrar_items():
-    items = sap.obtener_items()
-    with ThreadPoolExecutor(max_workers=10) as executor:  # Limita el número de hilos concurrentes
-        for item in items:
-            print(f"Registrando ítem: {item.ItemName} ({item.ItemCode})")
-            executor.submit(sap.crear_item, item)
 
 # Función para registrar ítems en paralelo usando el pool de hilos
 def registrar_pagos():
@@ -518,27 +512,6 @@ def registrar_pagos():
             orden=pago.U_Tipti_Orden
             billnumber=pago.U_Tipti_BillNumber
             executor.submit(sap.crear_Pago, pago,id,orden,billnumber)
-
-
-# Función para registrar facturas con control de ejecución
-def registrar_facturas():
-    # Obtener las facturas
-    facturas = sap.obtener_Facturas()
-
-    if facturas:
-        print(f"Procesando {len(facturas)} nuevas facturas.")
-        facturas_agrupadas = sap.agrupar_facturas(facturas)
-        
-        # Procesar las facturas agrupadas
-        for clave, facturas_json in facturas_agrupadas.items():
-            print(f"Procesando facturas para Orden: {clave[0]}, BillNumber: {clave[1]}")
-            secuencial = {clave[1]}
-            for factura_json in facturas_json:
-                sap.crear_factura(factura_json, secuencial)
-        return True  # Se procesaron facturas
-    else:
-        return False  # No se procesaron facturas
-# Ejecutar todos los procesos de manera secuencial para evitar errores de dependencias
 
 def insertar_errores(self, order,billnumber,respuesta,json):
     # Verificar si la sesión está activa antes de la operación
@@ -583,28 +556,108 @@ def insertar_errores(self, order,billnumber,respuesta,json):
         except Exception as e:
                 print(f"Error al realizar la solicitud: {e}")
 
+
+
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+# Función para registrar socios de negocios en paralelo usando el pool de hilos
+def registrar_socios():
+    socios = sap.obtener_socios_de_negocios()
+    with ThreadPoolExecutor(max_workers=10) as executor:  # Limita el número de hilos concurrentes
+        futures = []
+        for socio in socios:
+            print(f"Registrando socio de negocios: {socio.CardName} ({socio.LicTradNum})")
+            future = executor.submit(sap.crear_socio, socio)
+            futures.append((future, socio.LicTradNum))  # Guardar la referencia al futuro y el socio
+        # Esperamos a que todos los socios se registren
+        for future, lic_trad_num in futures:
+            future.result()  # Esperar a que cada socio sea creado
+            socios_creados.add(lic_trad_num)  # Marcar el socio como creado
+
+# Función para registrar ítems en paralelo usando el pool de hilos
+def registrar_items():
+    items = sap.obtener_items()
+    with ThreadPoolExecutor(max_workers=10) as executor:  # Limita el número de hilos concurrentes
+        futures = []
+        for item in items:
+            print(f"Registrando ítem: {item.ItemName} ({item.ItemCode})")
+            future = executor.submit(sap.crear_item, item)
+            futures.append((future, item.ItemCode))  # Guardar la referencia al futuro y el item
+        # Esperamos a que todos los ítems se registren
+        for future, item_code in futures:
+            future.result()  # Esperar a que cada ítem sea creado
+            items_creados.add(item_code)  # Marcar el ítem como creado
+
+# Función para registrar facturas con control de ejecución usando un deque
+def registrar_facturas():
+    # Obtener las facturas
+    facturas = sap.obtener_Facturas()
+
+    if facturas:
+        print(f"Procesando {len(facturas)} nuevas facturas.")
+        facturas_agrupadas = sap.agrupar_facturas(facturas)
+        
+        # Agregar las facturas agrupadas a la cola
+        for clave, facturas_json in facturas_agrupadas.items():
+            facturas_queue.append((clave, facturas_json))  # Añadir a la cola de tareas
+
+        # Procesar las facturas en cola
+        while facturas_queue:
+            clave, facturas_json = facturas_queue.popleft()  # Obtener la siguiente factura de la cola
+            print(f"Procesando facturas para Orden: {clave[0]}, BillNumber: {clave[1]}")
+            secuencial = {clave[1]}
+
+            # Verificar que todos los socios de negocios e ítems estén creados
+            for factura_json in facturas_json:
+                socio_card_code = factura_json["CardCode"]
+                item_code = factura_json["DocumentLines"][0]["ItemCode"]
+
+                # Verificar que el socio de negocios y el ítem existan
+                if socio_card_code not in socios_creados or item_code not in items_creados:
+                    # Esperar a que el socio de negocios y el ítem estén creados
+                    print(f"Esperando a que el socio de negocios {socio_card_code} y el ítem {item_code} sean creados.")
+                    continue  # Volver a intentar la factura más tarde
+
+                # Procesar la factura si ya están creados los dependientes
+                threading.Thread(target=sap.crear_factura, args=(factura_json, secuencial)).start()
+
+        return True  # Se procesaron facturas
+    else:
+        return False  # No se procesaron facturas
+
+
+
+
 def main():
-        while True:
-            # Registrar socios de negocios
-            registrar_socios()
+    while True:
+        # Registrar socios de negocios de manera concurrente
+        print("Iniciando el registro de socios de negocios...")
+        registrar_socios()  # Ya utiliza ThreadPoolExecutor
 
-            # Registrar ítems
-            registrar_items()
+        # Registrar ítems de manera concurrente
+        print("Iniciando el registro de ítems...")
+        registrar_items()  # Ya utiliza ThreadPoolExecutor
 
-            # Intentar registrar facturas
-            facturas_procesadas = registrar_facturas()
-            
-            # Si no se registraron facturas, esperar un poco y seguir
-            if not facturas_procesadas:
-                print("Esperando 3 minutos antes de procesar nuevas facturas...")
-                time.sleep(180)  # Espera 10 minutos antes de volver a intentar registrar facturas
+        # Esperar que los registros de socios e ítems se completen antes de continuar
+        print("Esperando a que los socios e ítems sean registrados...")
+        time.sleep(10)  # Puede ajustar este tiempo de espera según sea necesario
 
-            # Registrar pagos
-            registrar_pagos()
+        # Intentar registrar facturas, esperando que socios e ítems ya estén procesados
+        print("Intentando registrar facturas...")
+        facturas_procesadas = registrar_facturas()
+        
+        # Si no se registraron facturas, esperar un poco y seguir
+        if not facturas_procesadas:
+            print("Esperando 3 minutos antes de procesar nuevas facturas...")
+            time.sleep(180)  # Espera 3 minutos antes de volver a intentar registrar facturas
 
-            # Esperar un tiempo (por ejemplo, 10 minutos) antes de continuar con el próximo ciclo
-            print("Esperando 3 minutos antes de procesar nuevamente...")
-            time.sleep(180)  # 600 segundos = 10 minutos
+        # Registrar pagos
+        print("Iniciando el registro de pagos...")
+        registrar_pagos()
+
+        # Esperar un tiempo (por ejemplo, 3 minutos) antes de continuar con el próximo ciclo
+        print("Esperando 3 minutos antes de procesar nuevamente...")
+        time.sleep(180)  # 180 segundos = 3 minutos
    
 
 if __name__ == "__main__":

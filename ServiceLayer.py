@@ -5,7 +5,7 @@ import pyodbc
 from datetime import datetime
 # Desactivar la advertencia InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
-
+import re
 class SAPBusinessOne:
     def __init__(self, config_file='config.json'):
         # Cargar configuración desde el archivo JSON
@@ -132,14 +132,15 @@ class SAPBusinessOne:
                 print(f"Registro insertado con éxito, ID: {response.json()['Code']}")
                 return response.json()
             else:
-                print(f"Error al insertar el registro: {response.text}")
-                return None
+                #print(f"Error al insertar el registro: {response.text}")
+                return response.text
+            #None
         except requests.exceptions.Timeout:
             print("La solicitud ha superado el tiempo de espera.")
             return None
         except Exception as e:
             print(f"Error al realizar la solicitud: {e}")
-            return None
+            return None 
 
     def insertar_lineas(self, lineas):
         # Verificar si la sesión está activa antes de la operación
@@ -189,7 +190,7 @@ class SAPBusinessOne:
             }
 
             # Imprimir la trama (el JSON a enviar)
-            print("Trama a enviar:", json.dumps(linea_data, indent=4))  # Usamos json.dumps para una mejor presentación
+            #print("Trama a enviar:", json.dumps(linea_data, indent=4))  # Usamos json.dumps para una mejor presentación
 
             try:
                 # Intentar la inserción de la línea
@@ -252,7 +253,163 @@ class SAPBusinessOne:
             except Exception as e:
                 print(f"Error al realizar la solicitud: {e}")
 
-    def eliminar_lineas_en_rango(self, start_code, end_code):
+    def insertar_errores(self, order,billnumber,respuesta,json):
+    # Verificar si la sesión está activa antes de la operación
+        if not self.session_id:
+            print("No se ha obtenido una sesión válida.")
+            if not self.obtener_session():  # Si no hay sesión, intenta obtenerla
+                print("No se pudo obtener la sesión.")
+                return None
+
+        url = f"{self.service_layer_url}U_TIPTI_ERRORES"  # URL para los pagos (ajústalo según tu API)
+        # Obtener la fecha y hora actual
+        fecha_actual = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        # Preparar los datos de los pagos
+        MAX_LENGTH=254
+        
+        error_data = {
+                "Name":str(order) + str(billnumber),  # Usar el número de la factura como referencia
+                "U_Tipti_Orden":order,	
+                "U_Tipti_BillNumber":billnumber,	
+                "U_Tipti_Error":str(respuesta[:MAX_LENGTH]),
+                "U_Tipti_Json":json[:MAX_LENGTH] if isinstance(json, str) else str(json)[:MAX_LENGTH],	
+                "U_Tipti_fecha":fecha_actual
+            }
+
+        headers = {
+                "Content-Type": "application/json",
+                "Cookie": f"B1SESSION={self.session_id}; ROUTEID=.node0"  # Configuración de las cookies correctamente
+            }
+
+        print(self.session_id)
+
+        try:
+                # Intentar la inserción del pago
+                response = requests.post(url, json=error_data, headers=headers, verify=False, timeout=30)
+
+                if response.status_code == 201:
+                    print(f"Error registrado con éxito, ID: {response.json()['Code']}")
+                else:
+                    print(f"Error al insertar el error: {response.text}")
+        except requests.exceptions.Timeout:
+                print("La solicitud ha superado el tiempo de espera.")
+        except Exception as e:
+                print(f"Error al realizar la solicitud: {e}")
+
+    """def insertar_cabecera(self, cabecera):
+        # Validar campos antes de insertar
+        print(f"Valor de 'order': {cabecera.get('order')}")
+        validacion = validar_campos(cabecera)
+        if validacion:
+            return validacion  # Retorna el error 400 con el mensaje de validación
+
+        # Continuamos con la inserción si todo es correcto
+        if not self.session_id:
+            print("No se ha obtenido una sesión válida.")
+            if not self.obtener_session():  # Si no hay sesión, intenta obtenerla
+                print("No se pudo obtener la sesión.")
+                return None
+
+        url = f"{self.service_layer_url}U_HBT_CABECERA"
+        fecha_actual = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        cabecera_data = {
+            "Code": str(cabecera.get("order"))+cabecera.get("bill_number"),
+            "Name": f"Orden {cabecera.get('order')}",
+            "U_Tipti_Orden": cabecera.get("order"),
+            "U_Tipti_NumeroFC": cabecera.get("Numero_FacturasCompras"),
+            "U_Tipti_BillNumber": cabecera.get("bill_number"),
+            "U_Tipti_Authorization_Number": cabecera.get("authorization_number"),
+            "U_Tipti_Date": cabecera.get("date"),
+            "U_Tipti_user_ref": cabecera["user"].get("ref"),
+            "U_Tipti_User_Name": cabecera["user"].get("name"),
+            "U_Tipti_Tipticard_id": cabecera["user"].get("tipticard_id"),
+            "U_Email_user": cabecera["user"].get("email"),
+            "U_Tipti_Partner_Name": cabecera["partner"].get("name"),
+            "U_Tipti_Vat_Partner": cabecera["partner"].get("vat"),
+            "U_Tipti_vat_type": cabecera["partner"].get("vat_type"),
+            "U_Tipti_Street": cabecera["partner"].get("street"),
+            "U_Tipti_Phone_Partner": cabecera["partner"].get("phone"),
+            "U_Tipti_City_Partner": cabecera["partner"].get("city"),
+            "U_Tipti_Grupo_Partner": cabecera["partner"].get("Grupo"),
+            "U_Tipti_Subcategoria_Partner": cabecera["partner"].get("Subcategoria"),
+            # Verificar que purchase_shopper no sea None
+            "U_Tipti_purchase_shopper_id": cabecera["purchase_shopper"].get("id") if cabecera["purchase_shopper"] else None,
+            "U_Tipti_purchase_shopper_name": cabecera["purchase_shopper"].get("name") if cabecera["purchase_shopper"] else None,
+            "U_Tipti_purchase_shopper_ruc": cabecera["purchase_shopper"].get("ruc") if cabecera["purchase_shopper"] else None,
+            "U_Tipti_purchase_shopper_canal": cabecera["purchase_shopper"].get("canal") if cabecera["purchase_shopper"] else None,
+            # Verificar que delivery_shopper no sea None
+            "U_Tipti_delivery_shopper_id": cabecera["delivery_shopper"].get("id") if cabecera["delivery_shopper"] else None,
+            "U_Tipti_delivery_shopper_name": cabecera["delivery_shopper"].get("name") if cabecera["delivery_shopper"] else None,
+            "U_Tipti_delivery_shopper_ruc": cabecera["delivery_shopper"].get("ruc") if cabecera["delivery_shopper"] else None,
+            "U_Tipt_delivery_shopper_canali": cabecera["delivery_shopper"].get("canal") if cabecera["delivery_shopper"] else None,
+            "U_Tipti_retailer_bills": ",".join(cabecera.get("retailer_bills", [])) if isinstance(cabecera.get("retailer_bills"), list) else "",
+            "U_Tipti_vat_subtotal": cabecera.get("vat_subtotal"),
+            "U_Tipti_amount_total": cabecera.get("amount_total"),
+            "U_Tipti_retailer_name": cabecera.get("retailer_name"),
+            "U_Tipti_retailer_ruc": cabecera.get("retailer_ruc"),
+            "U_Tipti_retailer_id": cabecera.get("retailer_id"),
+            "U_Ciudad_id": cabecera.get("Ciudad_id"),
+            "U_Tipti_Ciudad_desc": cabecera.get("Ciudad_desc"),
+            "U_Titpti_Sector_id": cabecera.get("Sector_id"),
+            "U_Tipti_Sector_desc": cabecera.get("Sector_desc"),
+            "U_Tipti_Tienda_id": cabecera.get("Tienda_id"),
+            "U_Tipti_Tienda_desc": cabecera.get("Tienda_desc"),
+            # Verificar que delivery_information no sea None
+            "U_Tipti_delivery_city_id": cabecera["delivery_information"].get("city_id") if cabecera["delivery_information"] else None,
+            "U_Tipti_delivery_city": cabecera["delivery_information"].get("city") if cabecera["delivery_information"] else None,
+            "U_Tipti_delivery_sector_id": cabecera["delivery_information"].get("sector_id") if cabecera["delivery_information"] else None,
+            "U_Tipti_delivery_sector": cabecera["delivery_information"].get("sector") if cabecera["delivery_information"] else None,
+            "U_Tipti_delivery_address": cabecera["delivery_information"].get("address") if cabecera["delivery_information"] else None,
+            "U_Procesado": "P",  # Puedes ajustar según sea necesario
+            "U_Tipti_Estado_Cabecera": ""  # Puedes ajustar según sea necesario
+            ,"U_Tipti_Fecha_Reg": fecha_actual
+        }
+
+        headers = {
+            "Content-Type": "application/json",
+            "Cookie": f"B1SESSION={self.session_id}; ROUTEID=.node0"
+        }
+
+        try:
+            # Intentar la inserción de la cabecera
+            response = requests.post(url, json=cabecera_data, headers=headers, verify=False, timeout=30)
+
+            if response.status_code == 201:
+                print(f"Registro insertado con éxito, ID: {response.json()['Code']}")
+                return response.json()
+            else:
+                print(f"Error al insertar el registro: {response.text}")
+                return None
+        except requests.exceptions.Timeout:
+            print("La solicitud ha superado el tiempo de espera.")
+            return None
+        except Exception as e:
+            print(f"Error al realizar la solicitud: {e}")
+            return None"""
+
+    
+def validar_campos(cabecera):
+    # Verificar si los campos obligatorios están presentes
+    if not cabecera.get("order") or cabecera["order"].strip() == "":
+        return {"error": {"code": -400, "message": "El campo 'order' es obligatorio."}}, 400
+    if not cabecera.get("bill_number"):
+        return {"error": {"code": -400, "message": "El campo 'bill_number' es obligatorio."}}, 400
+
+    # Verificar que el email tenga el formato correcto
+    email = cabecera["user"].get("email")
+    if email:
+        # Usamos una expresión regular para validar el formato del correo
+        email_regex = r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)"
+        if not re.match(email_regex, email):
+            return {"error": {"code": -400, "message": f"El formato del correo '{email}' no es válido."}}, 400
+    else:
+        return {"error": {"code": -400, "message": "El campo 'email' es obligatorio."}}, 400
+
+    # Si todas las validaciones pasan, retornamos None
+    return None
+    
+    
+def eliminar_lineas_en_rango(self, start_code, end_code):
         # Verificar si la sesión está activa antes de la operación
         if not self.session_id:
             print("No se ha obtenido una sesión válida.")

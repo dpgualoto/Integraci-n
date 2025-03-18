@@ -2,8 +2,10 @@ from flask import Flask, request, jsonify, send_from_directory
 from collections import OrderedDict
 import json
 import os
+import re
 from ServiceLayer import SAPBusinessOne
 import threading
+from datetime import datetime
 
 app = Flask(__name__)
 sap = SAPBusinessOne(config_file='config.json')
@@ -145,6 +147,77 @@ def procesar_json():
     except Exception as e:
         return jsonify({"error": str(e)}), 400"""
 
+
+def validar_fecha(date_str):
+    try:
+        # Intentar convertir la cadena al formato de fecha
+        date_obj = datetime.strptime(date_str, "%Y-%m-%d %H:%M:%S")
+        return date_obj  # Si la conversión es exitosa, retornamos el objeto datetime
+    except ValueError:
+        return None  # Si la conversión falla, significa que la fecha no es válida
+    
+def validar_campos(cabecera):
+    #print(cabecera)
+    # Verificar si los campos obligatorios están presentes
+    if not cabecera.get("order") :
+        return {"error": {"code": -400, "message": "El campo 'order' es obligatorio."}}, 400
+    
+    if not cabecera.get("bill_number") or cabecera["bill_number"].strip() == "":
+        return {"error": {"code": -400, "message": "El campo 'bill_number' es obligatorio."}}, 400
+    
+    if not cabecera.get("authorization_number") or cabecera["authorization_number"].strip() == "":
+        return {"error": {"code": -400, "message": "El campo 'authorization_number' es obligatorio."}}, 400
+    
+        # Validar la fecha
+    date_str = cabecera.get("date")
+    if not date_str or not date_str.strip():
+        return {"error": {"code": -400, "message": "El campo 'date' es obligatorio."}}, 400
+    # Intentar convertir la fecha
+    fecha = validar_fecha(date_str)
+    if not fecha:
+        return {"error": {"code": -400, "message": f"El formato de la fecha '{date_str}' no es válido. El formato debe ser 'YYYY-MM-DD HH:MM:SS'."}}, 400
+
+    #validaciones PARTNER
+
+    vat=cabecera["partner"].get("vat")
+    if not vat or vat.strip() == "":
+        return {"error": {"code": -400, "message": "El campo 'vat' es obligatorio."}}, 400
+    
+    name=cabecera["partner"].get("name")
+    if not name or name.strip() == "":
+        return {"error": {"code": -400, "message": "El campo 'name' es obligatorio."}}, 400
+
+    # Verificar que el email tenga el formato correcto
+    email = cabecera["partner"].get("email")
+    if email:
+        # Usamos una expresión regular para validar el formato del correo
+        email_regex = r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)"
+        if not re.match(email_regex, email):
+            return {"error": {"code": -400, "message": f"El formato del correo '{email}' no es válido."}}, 400
+    else:
+        return {"error": {"code": -400, "message": "El campo 'email' es obligatorio."}}, 400
+    
+
+    # Si todas las validaciones pasan, retornamos None
+    return None
+    
+def validar_sale_lines(sale_lines):
+    #print(sale_lines)  # Verificar la estructura real
+    for line in sale_lines:
+        # Convertir OrderedDict a dict si es necesario
+        if isinstance(line, OrderedDict):
+            line = dict(line)
+
+        product_code = line.get("product_code", "").strip()  # Asegura que sea una cadena sin espacios
+        print(f"Producto: '{product_code}'")  # Mostrar el valor real de product_code
+
+        if not product_code:
+            error_response = {"error": {"code": -400, "message": "El campo 'product_code' es obligatorio y no puede estar vacío o nulo."}}
+            print("Respuesta de error:", error_response)  # Para verificar que se genera correctamente
+            return error_response, 400  # Retornar correctamente
+
+    return None  # Si no hay errores, retornar None
+
 @app.route('/procesar', methods=['POST'])
 def procesar_json():
     try:
@@ -154,11 +227,36 @@ def procesar_json():
         pagos = procesar_pagos(data)
         refund = procesar_refund(data)
 
+        validacion = validar_campos(data)  # Validamos los campos (en este caso 'order' y otros)
+        if validacion:
+            orden=cabecera['order']
+            billnumber=cabecera['bill_number']
+            datafin=dict(cabecera)
+            print(validacion)
+            sap.insertar_errores(orden,billnumber,validacion,datafin)
+            return jsonify(validacion), 400
+        
+        validaciones_lineas=validar_sale_lines(lineas)
+        if validaciones_lineas:
+            orden=cabecera['order']
+            billnumber=cabecera['bill_number']
+            datafin=dict(cabecera)
+            print(validaciones_lineas)
+            sap.insertar_errores(orden,billnumber,validaciones_lineas,datafin)
+            return jsonify(validaciones_lineas), 400
+
         # Intentar insertar la cabecera y verificar si fue exitosa
         cabecera_response = sap.insertar_cabecera(cabecera)
-        if cabecera_response is None:  # Si la cabecera no se insertó correctamente
-            print(cabecera.order)
-            return jsonify({"error": "No se pudo registrar la cabecera, las líneas y los pagos no se procesarán."}), 400
+        """if cabecera_response is None:  # Si la cabecera no se insertó correctamente
+            print(cabecera['order'])
+            return jsonify({"error": "No se pudo registrar la cabecera, las líneas y los pagos no se procesarán."}), 400"""
+        if isinstance(cabecera_response, str):
+            orden=cabecera['order']
+            billnumber=cabecera['bill_number']
+            datafin=dict(cabecera)
+            sap.insertar_errores(orden,billnumber,cabecera_response,datafin) 
+            return jsonify({"error": cabecera_response}), 400
+
         
         # Iniciar los hilos para insertar líneas y pagos si la cabecera fue exitosa
         lineas_thread = threading.Thread(target=sap.insertar_lineas, args=(lineas,))
@@ -190,9 +288,9 @@ def procesar_json():
         return jsonify(response_data), 200
 
     except Exception as e:
-        return jsonify({"error": str(e)}), 400
+        return jsonify({"error fin": str(e)}), 400
 
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=9000)
