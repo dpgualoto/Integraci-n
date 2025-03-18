@@ -440,44 +440,4 @@ def eliminar_lineas_en_rango(self, start_code, end_code):
                 print(f"Error al realizar la solicitud para Code {code}: {e}")
     
 
-        # Verificar si la sesión está activa antes de la operación
-        if not self.session_id:
-            print("No se ha obtenido una sesión válida.")
-            if not self.obtener_session():  # Si no hay sesión, intenta obtenerla
-                print("No se pudo obtener la sesión.")
-                return None
-
-        for item in items:
-            # Asegurarse de que los datos del socio de negocios sean correctos
-            item_data = {
-                "ItemCode": item.LicTradNum,
-                "ItemName": item.CardName,
-                "ItemsGroupCode": item.LicTradNum,
-                "SalesItem": "tYES",
-                "U_Tipti_Cod_Secun":""
-                #"SubCategoria": socio.SubCategoria  
-            }
-            #print("Datos del socio de negocios a crear:", partner_data)
-
-            url = f"{self.service_layer_url}Items"
-            headers = {
-                "Content-Type": "application/json",
-                "Cookie": f"B1SESSION={self.session_id}; ROUTEID=.node0"
-            }
-
-            try:
-                # Realizar la solicitud POST para crear el socio de negocios
-                response = requests.post(url, json=item_data, headers=headers, verify=False, timeout=30)
-
-                # Imprimir más detalles de la respuesta
-                #print("Código de respuesta:", response.status_code)
-                #print("Encabezados de la respuesta:", response.headers)
-                #print("Respuesta del servidor:", response.text)
-
-                if response.status_code == 201:
-                    print(f"Item creado con éxito, ID: {response.json()['ItemCode']}")
-                else:
-                    print(f"Error al crear el item. Código de error: {response.status_code}")
-                    print(f"Detalles del error: {response.text}")
-            except Exception as e:
-                print(f"Error al realizar la solicitud: {e}")
+        
